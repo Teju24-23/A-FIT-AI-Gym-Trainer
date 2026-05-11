@@ -510,7 +510,7 @@ st.markdown("---")
 
 st.markdown("## 📊 Results")
 
-    if st.button("🔥 Check Calories Burnt"):
+if st.button("🔥 Check Calories Burnt"):
 
         if st.session_state.workout_complete:
 
