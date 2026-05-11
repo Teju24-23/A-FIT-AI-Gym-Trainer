@@ -526,10 +526,10 @@ if st.button("🔥 Check Calories Burnt"):
 
             st.success(f"🔥 Calories Burnt: {calories:.2f} kcal")
 
-        else:
-            st.warning("Complete workout to unlock calories!")
+else:
+    st.warning("Complete workout to unlock calories!")
 
-    if st.button("Reset Workout"):
+if st.button("Reset Workout"):
 
 st.session_state.counter = 0
 st.session_state.workout_idx = 0
