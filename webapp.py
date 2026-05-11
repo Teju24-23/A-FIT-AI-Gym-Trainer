@@ -492,7 +492,7 @@ st.markdown("---")
 
 st.markdown("## 🥗 Diet Preference")
 
-    diet_pref = st.radio(
+diet_pref = st.radio(
         "Choose your diet type:",
         ["🥦Veg", "🍗Non-Veg", "🍱Both"]
     )
