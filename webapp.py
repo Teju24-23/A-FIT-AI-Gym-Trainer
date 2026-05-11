@@ -497,18 +497,18 @@ diet_pref = st.radio(
         ["🥦Veg", "🍗Non-Veg", "🍱Both"]
     )
 
-    st.markdown("---")
+st.markdown("---")
 
-    st.markdown("## 🎯 Goal")
+st.markdown("## 🎯 Goal")
 
-    goal = st.radio(
+goal = st.radio(
         "Select Goal",
         ["Weight Loss", "Muscle Gain"]
     )
 
-    st.markdown("---")
+st.markdown("---")
 
-    st.markdown("## 📊 Results")
+st.markdown("## 📊 Results")
 
     if st.button("🔥 Check Calories Burnt"):
 
@@ -531,17 +531,17 @@ diet_pref = st.radio(
 
     if st.button("Reset Workout"):
 
-        st.session_state.counter = 0
-        st.session_state.workout_idx = 0
-        st.session_state.start_time = time.time()
-        st.session_state.stage = "DOWN"
-        st.session_state.camera_on = False
-        st.session_state.exercise_start = time.time()
-        st.session_state.messages = []
-        st.session_state.workout_complete = False
-        st.session_state.exercise_name = ""
+st.session_state.counter = 0
+st.session_state.workout_idx = 0
+st.session_state.start_time = time.time()
+st.session_state.stage = "DOWN"
+st.session_state.camera_on = False
+st.session_state.exercise_start = time.time()
+st.session_state.messages = []
+st.session_state.workout_complete = False
+st.session_state.exercise_name = ""
 
-        st.rerun()
+st.rerun()
 
 # --- MAIN ---
 if not st.session_state.logged_in:
