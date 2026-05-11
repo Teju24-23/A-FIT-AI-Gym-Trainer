@@ -488,9 +488,9 @@ age = st.number_input("Age", 10, 100, 22, key="age_id_unique")
 height = st.number_input("Height (cm)", 100, 250, 170, key="height_id_unique")
 weight = st.number_input("Weight (kg)", 30, 200, 65, key="weight_id_unique")
 
-    st.markdown("---")
+st.markdown("---")
 
-    st.markdown("## 🥗 Diet Preference")
+st.markdown("## 🥗 Diet Preference")
 
     diet_pref = st.radio(
         "Choose your diet type:",
